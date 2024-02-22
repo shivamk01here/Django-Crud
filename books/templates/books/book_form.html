@@ -1,0 +1,13 @@
+<style>
+form.card {
+    border-radius: 9px;
+    border: 2px solid black;
+    padding: 60px;
+    margin: 113px;
+}
+</style>
+<h1>Book Edit</h1>
+<form class="card" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
